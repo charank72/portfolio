@@ -1,0 +1,115 @@
+@media  screen and (max-width:996px) {
+  header nav .menu-btn{
+    opacity: 1;
+    visibility: visible;
+  }
+  nav{
+    position: relative;
+  }
+  nav #menu{
+    display: none;
+  }
+  nav #menu.responsive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    animation: menu-anim 0.5s ease-in 1;
+  }
+  @keyframes menu-anim {
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+  /* home section*/
+  
+  #home h1{
+    font-size: 3em;
+  }
+  #home h2{
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  /* about section*/
+  #about{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #about .col{
+   height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    
+  }
+  #about .col:nth-child(){
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  #about .col .about-card{
+    display: flex;
+    font-size: 1em;
+    width: 100%;flex-direction: column;
+    align-items: center;
+  }
+  #about .col .about-card .image .ima{
+    width: 50px;height: 50px;
+  }
+  #about .col .about-card .tech-card ul li strong{
+    font-size: 4em;
+  }
+  /* resume */
+  #resume{
+    display: flex;
+    height: 100%;
+    
+  }
+  #resume .col{
+    height: 90%;
+    width: 90%;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #project {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  #project .card-container {
+    display: flex;
+    align-items: center;
+
+  }
+  #contact{
+    display: flex;height: 100%;
+  }
+  #contact .card .card-body{
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .card .card-map{
+    display: flex;
+    width: 100%;flex-direction: column;
+    align-items: center;
+  }
+}
