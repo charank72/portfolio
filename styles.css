@@ -332,9 +332,11 @@ th,td{
   align-items: center;
   justify-content: center;
 }
-#contact .col .card-map iframe {
-  width: 100%;
+#contact .col .card .card-map iframe {
+  width: 100vh;
   height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 #contact .col .card .card-body form {
   display: flex;

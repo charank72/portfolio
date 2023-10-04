@@ -40,40 +40,21 @@
   /* about section*/
   #about{
     width: 90%;
-    height: 100%;
+    height: auto;
     margin: auto;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
   }
-  #about .col{
-   height: 100%;
+  #about > .col{
     width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: flex-start;
-    
   }
-  #about .col:nth-child(){
-    height: 100%;
-    width: auto;
+  #about .col:nth-child(2){
     display: flex;
     flex-direction: column;
-    overflow: auto;
   }
-  #about .col .about-card{
-    display: flex;
-    font-size: 1em;
-    width: 100%;flex-direction: column;
-    align-items: center;
-  }
-  #about .col .about-card .image .ima{
-    width: 50px;height: 50px;
-  }
-  #about .col .about-card .tech-card ul li strong{
-    font-size: 4em;
-  }
+
   /* resume */
   #resume{
     display: flex;
@@ -93,23 +74,27 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100%;
+    height: auto;
   }
   #project .card-container {
     display: flex;
     align-items: center;
-
+    flex-direction: column;height: 100%;
   }
   #contact{
-    display: flex;height: 100%;
+    display: flex;height: auto;
   }
   #contact .card .card-body{
     display: flex;
     flex-direction: column;
   }
-  #contact .card .card-map{
+  #contact .col {
+    margin-top: 5rem;
+  }
+  #contact .col .card .card-body .card-map{
     display: flex;
-    width: 100%;flex-direction: column;
+    width: auto;
+    height: auto;
     align-items: center;
   }
 }
