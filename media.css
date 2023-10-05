@@ -29,7 +29,9 @@
     }
   }
   /* home section*/
-  
+  #home {
+    height:89%;
+  }
   #home h1{
     font-size: 3em;
   }
@@ -53,6 +55,9 @@
   #about .col:nth-child(2){
     display: flex;
     flex-direction: column;
+  }
+  .sticky-menu{
+    display: none;
   }
 
   /* resume */
